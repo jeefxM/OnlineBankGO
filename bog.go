@@ -25,7 +25,7 @@ func (b *BOG) deposit(amount int){
 func (b *BOG) withdraw(amount int) error{
 	newBalance := b.balance - amount
 	if newBalance < 0{
-		return errors.New("insufficient funds")
+		return errors.New("insufficient fundss")
 	}
 	b.balance = newBalance
 	return nil
